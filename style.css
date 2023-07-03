@@ -1,9 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
 * {
     box-sizing: border-box;
     margin: 0;
 }
+
+/* @font-face {
+    font-family: 'Roboto';
+    src: url('/assets/fonts/Roboto-Regular.ttf'), format('truetype'),
+        url('/assets/fonts/Roboto-Bold.ttf'), format('truetype');
+} */
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -21,8 +27,87 @@ body {
 
 .card-holder {
     display: flex;
-    color: hsl(234, 29%, 20%);
+    align-items: center;
+    /* gap: 0rem 2rem; */
+    /* color: hsl(234, 29%, 20%); */
     background-color: white;
-    padding: 1rem;
+    padding: 1.3rem;
     border-radius: 1.5rem;
+}
+
+ul {
+    padding: 0;
+    vertical-align: middle;
+}
+
+ul li {
+    /* vertical-align: middle;
+    margin: 0;
+    padding-bottom: 1rem; */
+    
+    list-style-type: none;
+    list-style-position: inside;
+    list-style-image: url('/assets/images/icon-list.svg');
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+    gap: 1rem 0rem;
+    color: hsl(234, 29%, 20%);
+    font-weight: 500;
+    margin: 2rem;
+    margin-right: auto;
+}
+
+.content p {
+    width: 90%;
+}
+
+.content h1 {
+    padding-bottom: 1rem;
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container p {
+    font-size: 0.9rem;
+    font-weight: 700;
+    padding-bottom: 0.5rem;
+}
+
+#email{
+    width: 80%;
+    height: 3rem;
+    border-style: solid;
+    border-color: hsl(231, 7%, 80%);
+    border-radius: 0.4rem;
+}
+
+input::placeholder {
+    color: hsl(231, 7%, 65%);
+    padding-left: 1rem;
+    font-size: 0.9rem;
+}
+
+.button {
+    width: 80%;
+    height: 3rem;
+    border-style: none;
+    border-radius: 0.4rem;
+    background-color: hsl(234, 29%, 20%);
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: linear-gradient(to right, #FF5379, #FF693E);;
 }

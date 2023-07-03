@@ -7,13 +7,13 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
 
-  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <title>Newsletter sign-up form with success message</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
+  <!-- <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  </style> -->
 </head>
 <body>
 
@@ -50,19 +50,24 @@
       <div class="content">
         <h1>Stay updated!</h1>
         <p>Join 60,000+ product managers receiving monthly updates on:</p>
+          
         <ul>
-          <li>Product discovery and building what matters</li>
-          <li>Measuring to ensure updates are a success</li>
-          <li>And much more!</li>
+          <li>Product discovery and building what matters</li><br>
+        <li>Measuring to ensure updates are a success</li><br>
+        <li>And much more!</li><br>
         </ul>
 
-        <p>Email Address</p>
+        <div class="form-container">
+          <p>Email Address</p>
         <form action="#">
           <input type="text" placeholder="email@company.com" id="email" name="email"><br>
-          <input type="submit" value="Subscribe to monthly newsletter">
+          <input class= "button" type="submit" value="Subscribe to monthly newsletter">
         </form>
+        </div>
       </div>
-      <img src="/assets/images/illustration-sign-up-desktop.svg" alt="illustration-sign-up-desktop">
+      <div class="img-container">
+        <img src="/assets/images/illustration-sign-up-desktop.svg" alt="illustration-sign-up-desktop">
+      </div>
     </div>
   </div>
   
