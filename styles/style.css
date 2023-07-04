@@ -106,8 +106,13 @@ input::placeholder {
     font-weight: 700;
     color: white;
     cursor: pointer;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease 0s;
+    outline: none;
 }
 
 .button:hover {
-    background: linear-gradient(to right, #FF5379, #FF693E);;
+    background: linear-gradient(to right, #FF5379, #FF693E);
+    box-shadow: 0px 15px 20px rgba(255, 105, 62, 0.4);
+    transform: translateY(-6px);
 }
